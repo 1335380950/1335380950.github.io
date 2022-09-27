@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="referrer" content="never">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="kveln">
+  <title>MISC | Linas</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://1335380950.github.io/media/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--  <link href="https://1335380950.github.io/media/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="MISC | Linas » Feed" href="https://1335380950.github.io/atom.xml">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+  <link href="https://1335380950.github.io/styles/main.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
+  <!-- <script src="https://1335380950.github.io/media/scripts/jquery.min.js"></script> -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+    <meta property="og:description" content="MISC"/>
+    <meta property="og:url" content="https://1335380950.github.io/post/misc/"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Linas"/>
+  </head>
+  <body>
+  	<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://1335380950.github.io">Linas</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/">首页</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/archives">归档</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/tags">标签</a>
+              
+          </li>
+          
+          <li class="nav-item">
+              
+              <a class="nav-link" href="/post/about">关于</a>
+              
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://1335380950.github.io/media/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+          	<span class="tags">
+          	 
+        </span>
+            <h1>MISC</h1>
+            <span class="meta">
+            	Posted on
+              2022-09-27，8 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 id="misc">MISC</h1>
+<p>文件类型识别</p>
+<p>\1. File命令</p>
+<p>查找后缀名，kali:</p>
+<p>格式：  file myheart</p>
+<p>\2. Winhex</p>
+<p>查看文件头类型</p>
+<figure data-type="image" tabindex="1"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps69.jpg" alt="img" loading="lazy"></figure>
+<p>\3. 文件头残缺/错误</p>
+<p>格式：file 文件名</p>
+<p>文件分离操作</p>
+<p>\1. Binwalk工具</p>
+<p>分析文件：binwalk filename</p>
+<p>分离文件：binwalk -e filename</p>
+<p>binwalk -e /root/Desktop/新建文件夹/123456cry.jpg --run-as=root</p>
+<p>\2. foremost</p>
+<p>用法：</p>
+<p>Foremost 文件名 -o 输出文件夹名</p>
+<p>\3. Dd</p>
+<p>格式：</p>
+<p>dd if =源文件 of=目标文件名 bs=1 skip=开始分离的字节数</p>
+<p>\4. Winhex</p>
+<p>\5. 010Editor</p>
+<p>文件合并</p>
+<p>\1. linux 格式：cat 合并文件&gt; 输出文件</p>
+<p>完整性检测 md5sum 文件名</p>
+<p>图片文件隐写</p>
+<p>\1. Firework</p>
+<p>使用winhex打开文件是会看到文件头部中包含firework的标识，通过firework可以找到隐藏图片</p>
+<p>\2. Exif</p>
+<p>图片右键属性，查找flag</p>
+<p>\3. Stegsolve</p>
+<p>两张图片异或</p>
+<p>\4. LSB(最低有效位Least Significant Bit）</p>
+<p>像素三原色（RGB)</p>
+<p>通过修改像素中最低位的1bit来达到隐藏效果</p>
+<p>工具：stegsolve，zsteg，webstago4，python脚本</p>
+<p>Analyse data extract</p>
+<p>检测LSB隐写  zsteg  xxx.png</p>
+<p>\5. TweakPNG</p>
+<p>文件头正常却打不开，利用TweakPNG修改CRC</p>
+<p>Crc无错，有可能是高度和宽度错误</p>
+<p>\6. Bftools</p>
+<p>解密图片信息</p>
+<p>格式：</p>
+<p>Bftools.exe decode braincopter 要解密的图片名称 -output 输出文件名</p>
+<p>Bftools.exe run 上一步输出的文件</p>
+<p>\7. SilentEye</p>
+<p>可以将文字或者文件隐藏到图片的解密工具</p>
+<p>\8. JPG图像加密</p>
+<p>Stegdetect工具探测加密方式</p>
+<p>Stegdetect xxx.jpg</p>
+<p>Stegdetect -s 敏感度 xxx.jpgexi</p>
+<p>9.二维码识别</p>
+<p>压缩文件分析</p>
+<p>\1. 伪加密</p>
+<p>Winhex打开压缩文件，找到文件头第9个第10个字符，将其修改为0000</p>
+<p>RAR文件伪加密，winhex打开RAR文件，找到第24个字节，字节尾数表示加密，0表示无加密，将尾数改为0即可破解伪加密。</p>
+<p>\2. 暴力破解</p>
+<p>通常我们可以使用apchpr.exe工具来破解zip文件</p>
+<p>流量包文件分析</p>
+<p>Wireshark过滤器</p>
+<p>\1. 过滤</p>
+<p>常用过滤命令</p>
+<p>Ip.src eq x.x.x.x or ip.dst eq x.x.x.x or ip.addr x.x.x.x</p>
+<p>\2. 过滤端口</p>
+<p>Tcp.port eq 80 or udp.port eq 80</p>
+<p>Tcp.dstport  == 80</p>
+<p>Tcp.srcport  == 80</p>
+<p>Tcp.port &gt;=1 and tcp.port &lt;=80</p>
+<p>3.过滤协议</p>
+<p>tcp/udpl arp/icmp/http/ ftp/dns/ip……</p>
+<p>4.过滤MAC</p>
+<p>eth. dst == A0 :0o :o0:04:c5:84过滤目标mac</p>
+<p>5.包长度过滤</p>
+<p>udp.length == 26这个长度是指udp本身固定长度8加上udp下面那块数据包之和。</p>
+<p>tcp.len &gt;= 7指的是ip数据包(tcp下面那块数据),不包括tcp本身</p>
+<p>ip.len == 94除了以太网头固定长度14,其它都算是ip.len,即从ip本身到最后</p>
+<p>frame.len ==119整个数据包长度,从eth开始到最后</p>
+<p>6.http模式过滤</p>
+<p>http.request.method == &quot;GET&quot;http.request.method == &quot;POST&quot;</p>
+<p>http.request.uri == &quot; /img/ logo-edu.gif&quot;&quot;http contains &quot;GET&quot;</p>
+<p>http contains &quot;HTTP/1.&quot;</p>
+<p>http.request.method == &quot;GET&quot;&amp; &amp; http</p>
+<p>http contains &quot;flag&quot;</p>
+<p>http contains &quot;key&quot;tcp contains &quot;flag&quot;</p>
+<p>协议分析</p>
+<figure data-type="image" tabindex="2"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps70.jpg" alt="img" loading="lazy"></figure>
+<p>Wireshark流汇聚</p>
+<figure data-type="image" tabindex="3"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps71.jpg" alt="img" loading="lazy"></figure>
+<p>Wireshark数据提取</p>
+<figure data-type="image" tabindex="4"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps72.jpg" alt="img" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps73.jpg" alt="img" loading="lazy"></figure>
+<p>无线流量包跑密码</p>
+<figure data-type="image" tabindex="6"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps74.jpg" alt="img" loading="lazy"></figure>
+<p>Aircrack-ng工具进行wifi密码破解</p>
+<p>\1. 用aircrack-ng检查cap包：aircrack-ng xxx.cap</p>
+<p>\2. 用aircrack-ng跑字典进行握手包破解：aircrack-ng xxx.cap -w pass.txt</p>
+<p>USB流量包文件分析</p>
+<figure data-type="image" tabindex="7"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps75.jpg" alt="img" loading="lazy"></figure>
+<p>键盘USB流量抓取</p>
+<p>Leftover Capture Data中值与具体键位的对应关系,可以参考:http://www.usb.org/developers/hidpage/Hut1_12v2.pdf</p>
+<p>Leftover Capture Data数据提取万式1:</p>
+<p>文件→导出分组解析结果→为csv，导出保存成一个.csv文件。</p>
+<p>在得到的csv文件的Leftover Capture Data可以将数据复制出来。此方式为通用复制数据方法。</p>
+<p>Leftover Capture Data数据提取方式2:</p>
+<p>使用wireshark提供的命令行工具tshark，可以将Leftover Capture Data数据单独复制出来。tshark -r usb1.pcap -T fields -e usb.capdata &gt; usbdata.txt</p>
+<figure data-type="image" tabindex="8"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps76.jpg" alt="img" loading="lazy"></figure>
+<p>https://github.com/WangYihang/UsbMiceDataHacker</p>
+<p>https://github.com/WangYihang/UsbKeyboardDataHacker</p>
+<figure data-type="image" tabindex="9"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps77.jpg" alt="img" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps78.jpg" alt="img" loading="lazy"></figure>
+<p>HTTPS流量包文件分析</p>
+<img src="file:///C:\Users\13353\AppData\Local\Temp\ksohtml4268\wps79.jpg" alt="img" style="zoom:200%;" /> 
+<p>Brainfuck敲击码</p>
+<p><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps80.jpg" alt="img" loading="lazy">https://www.splitbrain.org/services/ook</p>
+<figure data-type="image" tabindex="11"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps81.jpg" alt="img" loading="lazy"></figure>
+<p>ICMP-LengthBinary</p>
+<p>题目很直接的给了提示，就是二进制与length的关系，使用wireshark打开流量包查看，使用过滤器icmp&amp;&amp; icmp.type==8来进行过滤，查看每一条流量的length值，发现都是32或64，直接编写脚本</p>
+<p># coding = utf-8</p>
+<p># --author: valecalida--</p>
+<p>import pyshark</p>
+<p>cap = pyshark.FileCapture('icmp_len_binary.pcap', display_filter=&quot;icmp &amp;&amp; icmp.type==8&quot;)</p>
+<p>cap.load_packets()</p>
+<p>flag = ''</p>
+<p>con1 = &quot;&quot;</p>
+<p>con2 = &quot;&quot;</p>
+<p>for i in range(0, len(cap)):</p>
+<p>if cap[i].icmp.data_len == '32':</p>
+<p>​    con1 += '0'</p>
+<p>​    con2 += '1'</p>
+<p>elif cap[i].icmp.data_len == '64':</p>
+<p>​    con1 += '1'</p>
+<p>​    con2 += '0'</p>
+<p>print(con1)</p>
+<p>print(con2)</p>
+<p>cap.close()</p>
+<p>运行得到两串二进制字符串</p>
+<p>011000110111010001100110011010000111010101100010011110110011000000110100011001010110011001100101011001000011000101100101001100000011010101111101</p>
+<p>100111001000101110011001100101111000101010011101100001001100111111001011100110101001100110011010100110111100111010011010110011111100101010000010</p>
+<p>直接在线解码，可以看到，直接得到了flag</p>
+<p>或者直接用下面的脚本跑出flag</p>
+<p># coding = utf-8</p>
+<p># --author: valecalida--</p>
+<p>import binascii</p>
+<p>import pyshark</p>
+<p>cap = pyshark.FileCapture('icmp_len_binary.pcap', display_filter=&quot;icmp &amp;&amp; icmp.type==8&quot;)</p>
+<p>cap.load_packets()</p>
+<p>flag = ''</p>
+<p>con1 = &quot;&quot;</p>
+<p>con2 = &quot;&quot;ICMP-LengthBinary</p>
+<p>题目很直接的给了提示，就是二进制与length的关系，使用wireshark打开流量包查看，使用过滤器icmp&amp;&amp; icmp.type==8来进行过滤，查看每一条流量的length值，发现都是32或64，直接编写脚本</p>
+<p># coding = utf-8</p>
+<p># --author: valecalida--</p>
+<p>import pyshark</p>
+<p>cap = pyshark.FileCapture('icmp_len_binary.pcap', display_filter=&quot;icmp &amp;&amp; icmp.type==8&quot;)</p>
+<p>cap.load_packets()</p>
+<p>flag = ''</p>
+<p>con1 = &quot;&quot;</p>
+<p>con2 = &quot;&quot;</p>
+<p>for i in range(0, len(cap)):</p>
+<p>if cap[i].icmp.data_len == '32':</p>
+<p>​    con1 += '0'</p>
+<p>​    con2 += '1'</p>
+<p>elif cap[i].icmp.data_len == '64':</p>
+<p>​    con1 += '1'</p>
+<p>​    con2 += '0'</p>
+<p>print(con1)</p>
+<p>print(con2)</p>
+<p>cap.close()</p>
+<p>运行得到两串二进制字符串</p>
+<p>011000110111010001100110011010000111010101100010011110110011000000110100011001010110011001100101011001000011000101100101001100000011010101111101</p>
+<p>100111001000101110011001100101111000101010011101100001001100111111001011100110101001100110011010100110111100111010011010110011111100101010000010</p>
+<p>直接在线解码，可以看到，直接得到了flag</p>
+<p>或者直接用下面的脚本跑出flag</p>
+<p># coding = utf-8</p>
+<p># --author: valecalida--</p>
+<p>import binascii</p>
+<p>import pyshark</p>
+<p>cap = pyshark.FileCapture('icmp_len_binary.pcap', display_filter=&quot;icmp &amp;&amp; icmp.type==8&quot;)</p>
+<p>cap.load_packets()</p>
+<p>flag = ''</p>
+<p>con1 = &quot;&quot;</p>
+<p>con2 = &quot;&quot;</p>
+<p>for i in range(0, len(cap)):</p>
+<p>if cap[i].icmp.data_len == '32':</p>
+<p>​    con1 += '0'</p>
+<p>​    con2 += '1'</p>
+<p>elif cap[i].icmp.data_len == '64':</p>
+<p>​    con1 += '1'</p>
+<p>​    con2 += '0'</p>
+<p>print(binascii.a2b_hex(hex(int(con1, base=2))[2:]))</p>
+<p>print(binascii.a2b_hex(hex(int(con2, base=2))[2:]))</p>
+<p>cap.close()</p>
+<p>运行得到flag</p>
+<p>b'ctfhub{04efed1e05}'</p>
+<p>b'\x9c\x8b\x99\x97\x8a\x9d\x84\xcf\xcb\x9a\x99\x9a\x9b\xce\x9a\xcf\xca\x82'</p>
+<h2 id="基础破解"><em><strong>*基础破解*</strong></em></h2>
+<p><em><strong>*1*</strong></em></p>
+<p>给你一个压缩包，你并不能获得什么，因为他是四位数字加密的哈哈哈哈哈哈哈。。。不对= =我说了什么了不得的东西。。 注意：得到的 flag 请包上 flag{} 提交</p>
+<p>Archpr直接破解</p>
+<figure data-type="image" tabindex="12"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps82.jpg" alt="img" loading="lazy"></figure>
+<p>密码2563</p>
+<p>打开flag.txt</p>
+<figure data-type="image" tabindex="13"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps83.jpg" alt="img" loading="lazy"></figure>
+<p>Base64解码</p>
+<figure data-type="image" tabindex="14"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps84.jpg" alt="img" loading="lazy"></figure>
+<h2 id="乌镇峰会种图"><em><strong>*乌镇峰会种图*</strong></em></h2>
+<p><em><strong>*1*</strong></em></p>
+<figure data-type="image" tabindex="15"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps85.jpg" alt="img" loading="lazy"></figure>
+<h2 id="文件中的秘密"><em><strong>*文件中的秘密*</strong></em></h2>
+<p><em><strong>*1*</strong></em></p>
+<p>属性里</p>
+<figure data-type="image" tabindex="16"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps86.jpg" alt="img" loading="lazy"></figure>
+<h2 id="wireshark"><em><strong>*wireshark*</strong></em></h2>
+<p><em><strong>*1*</strong></em></p>
+<p>黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案) 注意：得到的 flag 请包上 flag{} 提交</p>
+<p>Http的post里</p>
+<figure data-type="image" tabindex="17"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps87.jpg" alt="img" loading="lazy"></figure>
+<p><em><strong>*LSB*</strong></em></p>
+<p><em><strong>*1*</strong></em></p>
+<p><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps88.jpg" alt="img" loading="lazy"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps89.jpg" alt="img" loading="lazy"></p>
+<p>Rar1</p>
+<p>暴力破解</p>
+<figure data-type="image" tabindex="18"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps90.jpg" alt="img" loading="lazy"></figure>
+<figure data-type="image" tabindex="19"><img src="file:///C:%5CUsers%5C13353%5CAppData%5CLocal%5CTemp%5Cksohtml4268%5Cwps91.jpg" alt="img" loading="lazy"></figure>
+
+          
+          <p class="next-post">下一篇：
+            <a href="https://1335380950.github.io/post/kali/">
+              <span class="post-title">
+                KALI&rarr;
+              </span>
+            </a>
+          </p>
+        
+        <div class="comment">
+          
+        </div>
+      </div>
+    </div>
+  </article>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <li class="list-inline-item">
+              <a href="https://1335380950.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Linas</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://1335380950.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://1335380950.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  </body>
+</html>
+
